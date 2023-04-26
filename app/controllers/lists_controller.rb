@@ -1,4 +1,5 @@
 class ListsController < ApplicationController
+  
   def new
   end
 
@@ -10,4 +11,5 @@ class ListsController < ApplicationController
 
   def edit
   end
+  
 end
