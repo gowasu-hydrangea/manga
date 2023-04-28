@@ -3,6 +3,10 @@ class ListsController < ApplicationController
   def new
     @list = List.new
   end
+  
+  def create
+    
+  end
 
   def index
   end
@@ -12,5 +16,6 @@ class ListsController < ApplicationController
 
   def edit
   end
+  
   
 end
