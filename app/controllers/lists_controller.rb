@@ -5,7 +5,10 @@ class ListsController < ApplicationController
   end
   
   def create
-    
+    # 基礎知識学習フェーズ/アプリケーションを完成させよう/2章
+    list = List.new(list_params)
+    list.save
+    redirect_to '/top'
   end
 
   def index
