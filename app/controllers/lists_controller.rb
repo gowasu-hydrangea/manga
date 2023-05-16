@@ -21,6 +21,7 @@ class ListsController < ApplicationController
   end
 
   def edit
+    # 基礎知識学習フェーズ/アプリケーションを完成させよう/5章
     @list = List.find(params[:id])
   end
   
