@@ -13,6 +13,9 @@ Rails.application.routes.draw do
   # get 'lists/edit'
   get 'lists/:id/edit' => 'lists#edit', as: 'edit_list'
   
+  # 基礎知識学習フェーズ/アプリケーションを完成させよう/5章
+  patch 'lists/:id' => 'lists#update', as: 'update_list'
+  
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   
   get 'top' => 'homes#top'
