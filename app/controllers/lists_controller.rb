@@ -25,7 +25,10 @@ class ListsController < ApplicationController
     @list = List.find(params[:id])
   end
   
+  # 基礎知識学習フェーズ/アプリケーションを完成させよう/5章
   def update
+    list = List.find(params[:id])
+    list.update(list_params)
   end
   
   private
